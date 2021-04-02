@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE-edge"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Website</title>
+<!-- stylesheet -->
+<link rel="stylesheet" href="../SGV Proj/css/laptop.css">
+<!--fav-icon---------------->
+<link rel="shortcut icon" href="maskedwolfmocks/Online-Shopping-icon.png"/>
+
+<!-- Glidejs -->
+<link 
+       rel="stylesheet" 
+       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+    />
+<!-- Using FontAwesome for Icons -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+</head>
+<body>
+    <nav> 
+        <!--social-links-and-phone-number----------------->
+ <div class="social-call">
+     <!--social-links--->
+     <div class="social">
+         <a href="#"><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><i class="fab fa-twitter"></i></a>
+         <a href="#"><i class="fab fa-youtube"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+     </div>
+     <!--phone-number------>
+     <div class="phone">
+         <span>Call: +91 63829-76769</span>
+     </div>
+ </div>
+ <!--menu-bar----------------------------------------->
+ <div class="navigation">
+     <!--logo------------>
+     <!-- <a href="#" class="logo"><img src="./maskedwolfmocks/5b460533a7744_thumb900.png"></a> -->
+     <!--menu-icon------------->
+     <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span> <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+     <!--menu----------------->
+     <ul class="menu">
+         <li class="shop"><a href="./ios.html">IOS</a></li>
+         <li  class="shop"><a href="./products.html" >Android</a></li>
+         <li class="shop"><a href="./laptop.html">Windows</a>
+             <!--lable---->
+             <span class="sale-lable">Sale</span>
+         </li>
+         <li class="shop"><a href="./smartgadgets.html">Smart Gadgets</a></li>
+         <li class="shop"><a href="./aboutus.html">About Us</a></li>
+     </ul>
+     <!--right-menu----------->
+     <div class="search-box">
+        <input type="text" placeholder="Type to search..."> 
+         <!-- <a href="javascript:void(0);" class="search" > </a>-->
+         <div class="search">
+            <i class="fas fa-search"></i>
+         </div>
+         <div class="cancel-btn">
+             <i class="fas fa-times"></i>
+         </div>
+        </div>
+        <div class="right-menu">
+         <a href="./loginpage-main/login.html" class="user">
+             <i class="far fa-user"></i>
+         </a>
+         <a href="#">
+             <i class="fas fa-shopping-cart">
+                 <span class="num-cart-product">0</span>
+             </i>
+         </a>
+        </div>
+    </div>
+ </nav>
+
+  <!-- PRODUCTS -->
+
+  <section class="section products">
+    <div class="products-layout container">
+      <div class="col-1-of-4">
+        <!-- <div>
+          <div class="block-title">
+            <h3>Category</h3>
+          </div>
+
+          <ul class="block-content">
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Shoes</span>
+                <small>(10)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Bags</span>
+                <small>(7)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span> Accessories</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Clothings</span>
+                <small>(3)</small>
+              </label>
+            </li>
+          </ul>
+        </div> -->
+
+        <div>
+          <div class="block-title">
+            <h3>Brands</h3>
+          </div>
+
+          <ul class="block-content">
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>DELL</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>HP</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span> Lenovo</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Apple MacBook</span>
+                <small>(2)</small>
+              </label>
+            </li> 
+          </ul>
+        </div>
+      </div>
+      <div class="col-3-of-4">
+        <form action="">
+          <div class="item">
+            <label for="sort-by">Sort By</label>
+            <select name="sort-by" id="sort-by">
+              <option value="title" selected="selected">Name</option>
+              <option value="number">Price</option>
+              <option value="search_api_relevance">Relevance</option>
+              <option value="created">Newness</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="order-by">Order</label>
+            <select name="order-by" id="sort-by">
+              <option value="ASC" selected="selected">ASC</option>
+              <option value="DESC">DESC</option>
+            </select>
+          </div>
+          <a href="">Apply</a>
+        </form>
+
+        <div class="product-layout">
+
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/Dell G3.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="#">Dell G3</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/dell inspiron.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="#">Dell Inspiron</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/Dell Vostro.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="#">Dell Vostro</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/HP 15 11th gen.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">HP 15 11th gen</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/HP Notebook.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">HP Notebook</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/HP-Pavilion 11th gen.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">HP Pavilion 11th gen</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/Lenovo ideapad flex 5.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">Lenovo ideapad flex 5</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/Lenovo ideapad s145.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">Lenovo ideapad s145</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/Lenovo Yoga Slim 7.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">Lenovo Yoga slim 7</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/Mac book  pro.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">Mac Book Pro</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="img-container">
+              <img src="./images/Mac book Air.png" alt="" />
+              <div class="addCart">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+
+              <ul class="side-icons">
+                <span><i class="fas fa-search"></i></span>
+                <span><i class="far fa-heart"></i></span>
+                <span><i class="fas fa-sliders-h"></i></span>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="">Mac Book Air</a>
+              <div class="price">
+                <span>$150</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGINATION -->
+        <ul class="pagination">
+          <span>1</span>
+          <span>2</span>
+          <span class="icon">››</span>
+          <span class="last">Last »</span>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="sec containeer">
+      <div class="aboutus">
+          <h2>About Us</h2>
+                <p>Gadgets.in, is one of India's best technology and digital lifestyle shopping portal and
+                  Providing a simulating online shopping experience, it offers the latest range of gadgets and
+                  electronic products at most competitive prices. Gadgets.in carries over 7,000 products and
+                  the list is constantly being revised. We focus on bringing you the most unique gadgets in
+                  India.
+               </p>
+               <div class="payments">
+                  <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                  <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                  <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                  <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                  <i class="fa fa-google-wallet" aria-hidden="true"></i>
+              </div>
+              <p><span><i class="fa fa-lock" aria-hidden="true"></i></span>Secure Online Payment</p>
+          </div>
+      <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+      </div>
+      <div class="sec contact">
+          <h2>Contact Info</h2>
+          <ul class="info">
+              <li>
+                  <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                  <span>srm college <br>
+                        SRM nagar,<br>Potheri<br>
+                        Kattankalathur.
+                  </span>
+              </li>
+              <li>
+                  <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  <p><a href="tel:+91 9988776655">+91 9988776655</a></p>
+              </li>
+              <div class="femail">
+
+              <li>
+                  <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                  <p><a href="mailto:ac8454@srmist.edu.in">smartgasgetsvendita@gmail.com</a></p>                   
+               </li></div>
+          </ul>
+          <ul class="sci">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               </ul>
+      </div>
+  </div>
+</footer>
+<div class="copyrights">
+  <p>Copyrights © 2020 Smart Gadgets Vendita.All Rights Reserved. </p>
+</div>
+
+  <!-- Custom Scripts -->
+<script src="./js/Jquery.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/fix-nav.js"></script>
+  
+</body>
+
+</html>
